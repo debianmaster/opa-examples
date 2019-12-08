@@ -5,6 +5,6 @@ allow {
     input.path == "clusters"
     allowed[_]
 }
-allowed{
-    data.cluster_bindings[_].admin[_] = input.user
+allowed[x]=z {
+    data.cluster_bindings[x].admin[z] = input.user
 }
