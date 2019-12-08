@@ -191,8 +191,16 @@
             "readyonly":[""]
         },
         "demo1-kmdvpkipsl": {
-            "admin":["bob","alice"],
+            "admin":["alice","bob"],
             "readyonly":[""]
+        },
+        "m1-pztsdz": {
+            "admin":["alice"],
+            "readyonly":[]
+        },
+        "demo2-etbtawrdwf": {
+            "admin":["bob"],
+            "readyonly":["alice"]
         }
     }
 }

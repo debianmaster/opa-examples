@@ -2,9 +2,9 @@ package authz
 
 allow { 
     input.method == "GET" 
-    input.path == "clusters" 
+    input.path == "clusters"
     allowed[_]
 }
-allowed[x]{
-    data.cluster_bindings[x].admin[_] = input.user
+allowed[x]=z {
+    data.cluster_bindings[x].admin[z] = input.user
 }
