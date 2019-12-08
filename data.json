@@ -10,8 +10,8 @@
             ],
             "generation": "2",
             "rbac":{
-                "admin":["alice"],
-                "readyonly":[""]
+                "admin":[],
+                "readyonly":["alice"]
             },
             "labels": {
                 "biqmind.io/ui-name": "dan6dec",
