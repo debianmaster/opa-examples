@@ -1,0 +1,198 @@
+{
+    "clusters":[
+    {
+        "apiVersion": "operator.biqmind.com/v1alpha1",
+        "kind": "Cluster",
+        "metadata": {
+            "creationTimestamp": "2019-12-06T03:26:35Z",
+            "finalizers": [
+                "cluster.finalizers.operator.biqmind.com"
+            ],
+            "generation": "2",
+            "labels": {
+                "biqmind.io/ui-name": "dan6dec",
+                "heritage": "biqmind"
+            },
+            "name": "dan6dec-vmqteosjji",
+            "namespace": "biqmind",
+            "resourceVersion": "33516304",
+            "selfLink": "/apis/operator.biqmind.com/v1alpha1/namespaces/biqmind/clusters/dan6dec-vmqteosjji",
+            "uid": "3496a3b2-17d8-11ea-8618-02134c9b763c"
+        },
+        "spec": {
+            "component": {
+                "backupDR": "true"
+            },
+            "credentialSecret": "dan6dec-vmqteosjji",
+            "provider": "other",
+            "region": "Singapore"
+        },
+        "status": {
+            "conditions": [
+                {
+                    "lastProbeTime": "2019-12-06T03:26:49Z",
+                    "lastTransitionTime": "2019-12-06T03:26:49Z",
+                    "status": "True",
+                    "type": "CheckAgent"
+                }
+            ],
+            "health": {
+                "phase": "Healthy",
+                "updated_at": "2019-12-07T05:00:33Z"
+            },
+            "lastUpdate": "2019-12-07T05:00:33Z",
+            "nodes": 1,
+            "status": "Success"
+        }
+    },
+    {
+        "apiVersion": "operator.biqmind.com/v1alpha1",
+        "kind": "Cluster",
+        "metadata": {
+            "creationTimestamp": "2019-12-04T20:11:37Z",
+            "finalizers": [
+                "cluster.finalizers.operator.biqmind.com"
+            ],
+            "owner":"bob",
+            "generation": "2",
+            "labels": {
+                "biqmind.io/ui-name": "demo11",
+                "heritage": "biqmind"
+            },
+            "name": "demo1-kmdvpkipsl",
+            "namespace": "biqmind",
+            "resourceVersion": "33516302",
+            "selfLink": "/apis/operator.biqmind.com/v1alpha1/namespaces/biqmind/clusters/demo1-kmdvpkipsl",
+            "uid": "469bfbd6-16d2-11ea-8618-02134c9b763c"
+        },
+        "spec": {
+            "component": {
+                "backupDR": "true"
+            },
+            "credentialSecret": "demo1-kmdvpkipsl",
+            "provider": "other",
+            "region": "sg"
+        },
+        "status": {
+            "conditions": [
+                {
+                    "lastProbeTime": "2019-12-04T20:12:14Z",
+                    "lastTransitionTime": "2019-12-04T20:12:14Z",
+                    "status": "True",
+                    "type": "CheckAgent"
+                }
+            ],
+            "health": {
+                "phase": "Healthy",
+                "updated_at": "2019-12-07T05:00:33Z"
+            },
+            "lastUpdate": "2019-12-07T05:00:33Z",
+            "nodes": 1,
+            "status": "Success"
+        }
+    },
+    {
+        "apiVersion": "operator.biqmind.com/v1alpha1",
+        "kind": "Cluster",
+        "metadata": {
+            "creationTimestamp": "2019-12-05T02:08:57Z",
+            "finalizers": [
+                "cluster.finalizers.operator.biqmind.com"
+            ],
+            "owner":"bob",
+            "generation": "2",
+            "labels": {
+                "biqmind.io/ui-name": "demo2",
+                "heritage": "biqmind"
+            },
+            "name": "demo2-etbtawrdwf",
+            "namespace": "biqmind",
+            "resourceVersion": "33516299",
+            "selfLink": "/apis/operator.biqmind.com/v1alpha1/namespaces/biqmind/clusters/demo2-etbtawrdwf",
+            "uid": "31d1dbd2-1704-11ea-8618-02134c9b763c"
+        },
+        "spec": {
+            "component": {
+                "backupDR": "true"
+            },
+            "credentialSecret": "demo2-etbtawrdwf",
+            "provider": "other",
+            "region": "sg"
+        },
+        "status": {
+            "conditions": [
+                {
+                    "lastProbeTime": "2019-12-05T02:09:34Z",
+                    "lastTransitionTime": "2019-12-05T02:09:34Z",
+                    "status": "True",
+                    "type": "CheckAgent"
+                }
+            ],
+            "health": {
+                "phase": "Healthy",
+                "updated_at": "2019-12-07T05:00:32Z"
+            },
+            "lastUpdate": "2019-12-07T05:00:32Z",
+            "nodes": 1,
+            "status": "Success"
+        }
+    },
+    {
+        "apiVersion": "operator.biqmind.com/v1alpha1",
+        "kind": "Cluster",
+        "metadata": {
+            "creationTimestamp": "2019-11-29T04:08:30Z",
+            "finalizers": [
+                "cluster.finalizers.operator.biqmind.com"
+            ],
+            "owner":"bob",
+            "generation": "1",
+            "labels": {
+                "biqmind.io/ui-name": "m1",
+                "heritage": "biqmind"
+            },
+            "name": "m1-pztsdz",
+            "namespace": "biqmind",
+            "resourceVersion": "33516303",
+            "selfLink": "/apis/operator.biqmind.com/v1alpha1/namespaces/biqmind/clusters/m1-pztsdz",
+            "uid": "e6fc3315-125d-11ea-9609-0651fbf3d676"
+        },
+        "spec": {
+            "credentialSecret": "m1-pztsdz",
+            "provider": "aws-eks",
+            "region": "ind"
+        },
+        "status": {
+            "conditions": [
+                {
+                    "lastProbeTime": "2019-11-29T04:08:43Z",
+                    "lastTransitionTime": "2019-11-29T04:08:43Z",
+                    "status": "True",
+                    "type": "CheckAgent"
+                }
+            ],
+            "health": {
+                "phase": "Healthy",
+                "updated_at": "2019-12-07T05:00:33Z"
+            },
+            "lastUpdate": "2019-12-07T05:00:33Z",
+            "nodes": 1,
+            "status": "Success"
+        }
+    }
+    ],
+    "user_bindings" : {
+        "alice": ["dan6dec-vmqteosjji","demo1-kmdvpkipsl"],
+        "bob": ["dan6dec-vmqteosjji"]
+    },
+    "cluster_bindings" : {
+        "dan6dec-vmqteosjji": [{
+            "admin":["alice"],
+            "readyonly":[""]
+        }],
+        "demo1-kmdvpkipsl": [{
+            "admin":["bob","alice"],
+            "readyonly":[""]
+        }]
+    }
+}
