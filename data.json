@@ -9,6 +9,10 @@
                 "cluster.finalizers.operator.biqmind.com"
             ],
             "generation": "2",
+            "rbac":{
+                "admin":["alice"],
+                "readyonly":[""]
+            },
             "labels": {
                 "biqmind.io/ui-name": "dan6dec",
                 "heritage": "biqmind"
@@ -55,6 +59,10 @@
             ],
             "owner":"bob",
             "generation": "2",
+            "rbac":{
+                "admin":["bob"],
+                "readyonly":[""]
+            },
             "labels": {
                 "biqmind.io/ui-name": "demo11",
                 "heritage": "biqmind"
@@ -101,6 +109,10 @@
             ],
             "owner":"bob",
             "generation": "2",
+            "rbac":{
+                "admin":["alice"],
+                "readyonly":[""]
+            },
             "labels": {
                 "biqmind.io/ui-name": "demo2",
                 "heritage": "biqmind"
@@ -147,6 +159,10 @@
             ],
             "owner":"bob",
             "generation": "1",
+            "rbac":{
+                "admin":["jane"],
+                "readyonly":[""]
+            },
             "labels": {
                 "biqmind.io/ui-name": "m1",
                 "heritage": "biqmind"

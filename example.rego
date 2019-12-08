@@ -5,6 +5,6 @@ allow {
     input.path == "clusters"
     allowed[_]
 }
-allowed[x]=z {
-    data.cluster_bindings[x].admin[z] = input.user
+allowed[x] {
+    data.clusters[x].metadata.rbac.admin[_] = input.user
 }
