@@ -182,17 +182,17 @@
     }
     ],
     "user_bindings" : {
-        "alice": ["dan6dec-vmqteosjji","demo1-kmdvpkipsl"],
+        "alice": ["dan6dec-vmqteosjji","demo1-kmdvpkipsl","m1-pztsdz"],
         "bob": ["dan6dec-vmqteosjji"]
     },
     "cluster_bindings" : {
-        "dan6dec-vmqteosjji": [{
+        "dan6dec-vmqteosjji": {
             "admin":["alice"],
             "readyonly":[""]
-        }],
-        "demo1-kmdvpkipsl": [{
+        },
+        "demo1-kmdvpkipsl": {
             "admin":["bob","alice"],
             "readyonly":[""]
-        }]
+        }
     }
 }

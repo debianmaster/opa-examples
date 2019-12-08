@@ -6,5 +6,5 @@ allow {
     allowed[_]
 }
 allowed[x]{
-    data.clusters[x].metadata.name = data.user_bindings[input.user][_]
+    data.cluster_bindings[x].admin[_] = input.user
 }
