@@ -10,7 +10,7 @@
             ],
             "generation": "2",
             "rbac":{
-                "admin":[],
+                "admin":["bob"],
                 "readyonly":["alice"]
             },
             "labels": {
@@ -57,7 +57,6 @@
             "finalizers": [
                 "cluster.finalizers.operator.biqmind.com"
             ],
-            "owner":"bob",
             "generation": "2",
             "rbac":{
                 "admin":["bob"],
@@ -107,7 +106,6 @@
             "finalizers": [
                 "cluster.finalizers.operator.biqmind.com"
             ],
-            "owner":"bob",
             "generation": "2",
             "rbac":{
                 "admin":["alice"],
@@ -157,10 +155,9 @@
             "finalizers": [
                 "cluster.finalizers.operator.biqmind.com"
             ],
-            "owner":"bob",
             "generation": "1",
             "rbac":{
-                "admin":["jane"],
+                "admin":["jane","alice","bob"],
                 "readyonly":[""]
             },
             "labels": {
@@ -197,6 +194,7 @@
         }
     }
     ],
+    "super_admins":["dan","dinesh"],
     "user_bindings" : {
         "alice": ["dan6dec-vmqteosjji","demo1-kmdvpkipsl","m1-pztsdz"],
         "bob": ["dan6dec-vmqteosjji"]
