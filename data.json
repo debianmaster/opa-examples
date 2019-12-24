@@ -17,7 +17,7 @@
                 "biqmind.io/ui-name": "dan6dec",
                 "heritage": "biqmind"
             },
-            "name": "dan6dec-vmqteosjji",
+            "name": "aws-gluohfhcwo",
             "namespace": "biqmind",
             "resourceVersion": "33516304",
             "selfLink": "/apis/operator.biqmind.com/v1alpha1/namespaces/biqmind/clusters/dan6dec-vmqteosjji",
@@ -164,7 +164,7 @@
                 "biqmind.io/ui-name": "m1",
                 "heritage": "biqmind"
             },
-            "name": "m1-pztsdz",
+            "name": "azure-cikivygyxd",
             "namespace": "biqmind",
             "resourceVersion": "33516303",
             "selfLink": "/apis/operator.biqmind.com/v1alpha1/namespaces/biqmind/clusters/m1-pztsdz",
@@ -199,22 +199,47 @@
         "alice": ["dan6dec-vmqteosjji","demo1-kmdvpkipsl","m1-pztsdz"],
         "bob": ["dan6dec-vmqteosjji"]
     },
-    "cluster_bindings" : {
-        "dan6dec-vmqteosjji": {
-            "admin":["alice"],
-            "readyonly":[""]
+    "cluster_bindings" : 
+    [
+        {
+            "apiVersion": "rbac.authorization.k8s.io/v1",
+            "kind": "RoleBinding",
+            "metadata": {
+                "name": "cluster-admin-aws-gluohfhcwo-binding",
+                "namespace": "biqmind"
+            },
+            "roleRef": {
+                "apiGroup": "rbac.authorization.k8s.io",
+                "kind": "Role",
+                "name": "cluster-admin-aws-gluohfhcwo"
+            },
+            "subjects":[
+                {
+                    "apiGroup": "rbac.authorization.k8s.io",
+                    "kind": "User",
+                    "name": "bob"
+                }
+            ]
         },
-        "demo1-kmdvpkipsl": {
-            "admin":["alice","bob"],
-            "readyonly":[""]
-        },
-        "m1-pztsdz": {
-            "admin":["alice"],
-            "readyonly":[]
-        },
-        "demo2-etbtawrdwf": {
-            "admin":["bob"],
-            "readyonly":["alice"]
+        {
+            "apiVersion": "rbac.authorization.k8s.io/v1",
+            "kind": "RoleBinding",
+            "metadata": {
+                "name": "cluster-admin-azure-cikivygyxd-binding",
+                "namespace": "biqmind"
+            },
+            "roleRef": {
+                "apiGroup": "rbac.authorization.k8s.io",
+                "kind": "Role",
+                "name": "cluster-admin-azure-cikivygyxd"
+            },
+            "subjects":[
+                {
+                    "apiGroup": "rbac.authorization.k8s.io",
+                    "kind": "User",
+                    "name": "bob1"
+                }
+            ]
         }
-    }
+    ]
 }
